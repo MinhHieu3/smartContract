@@ -47,8 +47,9 @@ contract SmartContract with Deployable {
 
     // Getter function to read the counter variable
     get fun Counter(): Int { // Int is the type of value returned
+            self.counter = self.counter + 1;
+
         return self.counter;
-        self.counter = self.counter + 1;
     }
 
     // Getter function for the ID
